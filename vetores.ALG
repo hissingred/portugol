@@ -5,23 +5,22 @@ Algoritmo "semnome"
 // Autor(a)    : Nome do(a) aluno(a)
 // Data atual  : 06/12/2022
 Var
-cont: inteiro
-numero: inteiro
-qtde: inteiro
+notas: vetor[0..4] de inteiro
+
+
 Inicio
+notas[0] <- 10
+notas[1] <- 11
+notas[2] <- 7
+notas[3] <- 8
 
-para cont de 1 ate 5 faca
-  escreval("digite um numero",cont)
-  leia (numero)
- se numero mod 2 = 0 entao
-   escreval ("Esse numero é par",numero)
-senao
-se numero mod 2 <> 0 entao
-   escreval ("Esse número é impar",numero)
-qtde <-  qtde +1
-fimse
-fimse
+escreval ("A nota na posição é :: ", notas[2])
 
-fimpara
-escreval ("temos",qtde, "numeros pares")
+escreval ("Digite a nota para a posição 3")
+leia (notas[3])
+escreval ("A nota na posição 3 digitada foi ::",notas[3])
+
+
+
+
 Fimalgoritmo
